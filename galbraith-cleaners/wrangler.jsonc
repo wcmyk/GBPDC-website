@@ -1,0 +1,26 @@
+{
+  // Cloudflare Worker config for the Galbraith Professional Cleaners site.
+  // Deploy with:  bun run deploy      (or: npm run deploy)
+  "name": "galbraith-cleaners",
+  "main": "dist/server/server.js",
+  "compatibility_date": "2025-05-01",
+  "compatibility_flags": ["nodejs_compat"],
+  "observability": { "enabled": true },
+
+  // Static files in dist/client serve directly; every other path (including "/")
+  // falls through to the server-rendered Worker.
+  "assets": {
+    "directory": "./dist/client",
+    "binding": "ASSETS",
+    "not_found_handling": "none"
+  }
+
+  // Custom domain: after the first deploy, add it in the Cloudflare dashboard
+  // (Workers & Pages > this worker > Settings > Domains & Routes > Add custom
+  // domain), or uncomment and edit the routes block below.
+  //
+  // "routes": [
+  //   { "pattern": "galbraithcleaners.com", "custom_domain": true },
+  //   { "pattern": "www.galbraithcleaners.com", "custom_domain": true }
+  // ]
+}
