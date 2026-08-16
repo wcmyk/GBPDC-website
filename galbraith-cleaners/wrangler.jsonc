@@ -1,7 +1,7 @@
 {
   // Cloudflare Worker config for the Galbraith Professional Cleaners site.
   // Deploy with:  bun run deploy      (or: npm run deploy)
-  "name": "galbraith-cleaners",
+  "name": "gbpdc-website",
   "main": "dist/server/server.js",
   "compatibility_date": "2025-05-01",
   "compatibility_flags": ["nodejs_compat"],
