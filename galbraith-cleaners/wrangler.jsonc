@@ -20,7 +20,7 @@
   // domain), or uncomment and edit the routes block below.
   //
   // "routes": [
-  //   { "pattern": "galbraithcleaners.com", "custom_domain": true },
-  //   { "pattern": "www.galbraithcleaners.com", "custom_domain": true }
+  //   { "pattern": "galbraithprofessionaldrycleaners.com", "custom_domain": true },
+  //   { "pattern": "www.galbraithprofessionaldrycleaners.com", "custom_domain": true }
   // ]
 }

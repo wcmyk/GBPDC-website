@@ -47,9 +47,10 @@ bun run deploy      # builds, then publishes the Worker
 ```
 
 3. Attach the domain: Cloudflare dashboard, Workers & Pages, open
-   `galbraith-cleaners`, Settings, Domains & Routes, Add custom domain, enter
-   `galbraithcleaners.com` (and `www.`). DNS records are created for you.
-   You can also uncomment the `routes` block in `wrangler.jsonc` and redeploy.
+   `gbpdc-website`, Settings, Domains & Routes, Add custom domain, enter
+   `galbraithprofessionaldrycleaners.com` (and `www.`). DNS records are created
+   for you. You can also uncomment the `routes` block in `wrangler.jsonc` and
+   redeploy.
 
 The Workers free plan covers a site of this size. Static files are served from
 `dist/client`, everything else is rendered by the Worker.
